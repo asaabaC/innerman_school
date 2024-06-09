@@ -1,0 +1,180 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+}
+
+.brand-logo img {
+    width: 50px;
+    height: auto;
+}
+
+.brand-logo-name {
+    margin-left: 10px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-lists {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-lists li {
+    margin-right: 20px;
+}
+
+.navbar-link {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.navbar-link:hover {
+    text-decoration: underline;
+}
+
+.icon {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar-lists {
+        display: none;
+        flex-direction: column;
+    }
+
+    .navbar-lists.responsive {
+        display: flex;
+    }
+
+    .icon {
+        display: block;
+        color: white;
+    }
+}
+
+.school-img-container {
+    position: relative;
+}
+
+.school-img {
+    width: 100%;
+    height: auto;
+}
+
+.img-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+#vision, #mission, #motto, #core-values {
+    padding: 20px;
+    text-align: center;
+    background-color: #c1cfdb;
+}
+
+.main-notice-section {
+    padding: 20px;
+    background-color: #49b6f5;
+}
+
+.notice-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.notice-bord, .event-card {
+    width: 45%;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.event-details {
+    margin-top: 20px;
+}
+
+.event {
+    margin-bottom: 20px;
+}
+
+#about-us-section {
+    padding: 20px;
+    background-color: #27edf4;
+}
+
+.our-school-map {
+    padding: 20px;
+    text-align: center;
+}
+
+#contact-form {
+    padding: 20px;
+    background-color: #18ceee;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+textarea {
+    height: 100px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
